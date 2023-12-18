@@ -1,4 +1,4 @@
-.header{
+.header,.visit-header{
   color: #4158D0;
   text-shadow:5px 5px 5px  #C850C0;
 }
@@ -19,6 +19,7 @@
 .card-img{
   height: 150px;
 }
+
 .card-content{
   color: #C850C0;
   font-weight: 600;
@@ -62,5 +63,33 @@
 
 
 
+.list-item{
+  background-color: #FFCC70;
+  padding: 30px;
+  margin: 10px;
+  align-items: center;
+  position: relative;
+}
+.list-item p{
+  color: #C850C0;
+  font-size: 1.3rem;
+  font-weight: 600;
 
+}
 
+.visited {
+  border-left: 1rem solid #C850C0;
+  opacity: 0.8;
+}
+.visited::after {
+  content: "VISITED";
+  background-color: #C850C0;
+  color: white;
+  font-size: 2rem;
+  border-radius: 1rem;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  padding: 0.5rem;
+  transform: translate(-50%, -50%);
+}

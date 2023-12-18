@@ -1,8 +1,8 @@
-import "./cities.css";
+
 import { cityData } from "../helper/data";
 import { useState } from "react";
 import AddModal from "./AddModal";
-const Cities = () => {
+const Cities = ({handleAdd}) => {
 
   const [show, setShow] = useState(false);
   const [city,setCity]=useState("")
@@ -35,7 +35,7 @@ const Cities = () => {
           </div>
         ))}
       </div>
-      <AddModal show={show} handleClose={handleClose} city={city} />
+      <AddModal show={show} handleClose={handleClose} city={city} handleAdd={handleAdd} />
     </div>
   );
 };

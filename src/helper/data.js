@@ -61,17 +61,17 @@ export const cityData = [
       numberOfPeople:2
     },
     {
-      id: 1,
+      id: 2,
       place:"London",
       day: new Date(),
       visited: true,
       numberOfPeople:3
     },
     {
-      id: 1,
+      id: 3,
       place:"Paris",
       day: new Date(),
-      visited: true,
+      visited: false,
       numberOfPeople:1
     },
    
