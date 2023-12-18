@@ -52,3 +52,28 @@ export const cityData = [
     },
   ]
   
+  export const visitedCities = [
+    {
+      id: 1,
+      place:"Zurich",
+      day: new Date(),
+      visited: true,
+      numberOfPeople:2
+    },
+    {
+      id: 1,
+      place:"London",
+      day: new Date(),
+      visited: true,
+      numberOfPeople:3
+    },
+    {
+      id: 1,
+      place:"Paris",
+      day: new Date(),
+      visited: true,
+      numberOfPeople:1
+    },
+   
+  ]
+  
