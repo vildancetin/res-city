@@ -3,7 +3,7 @@ import { TiDelete } from "react-icons/ti";
 const CitiesList = ({ visited, handleDelete, handleDubleClick }) => {
   return (
     <>
-      <h1 className="text-center my-3 visit-header">VISITED LIST</h1>
+      <h1 className="text-center my-3 visit-header">VISIT LIST</h1>
       <div>
         {visited.map((item) => (
           <div
