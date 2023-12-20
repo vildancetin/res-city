@@ -21,15 +21,15 @@ const AddModal = ({ show, handleClose, city,handleAdd }) => {
     console.log(number, date);
   };
   return (
-    <>
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>{city}</Modal.Title>
+    <div>
+      <Modal show={show} onHide={handleClose} >
+        <Modal.Header closeButton className="modal-bg">
+          <Modal.Title className="head">{city}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <Form onSubmit={handleSubmit}>
+        <Modal.Body className="modal-bg">
+          <Form onSubmit={handleSubmit} >
             <Form.Group className="mb-3" controlId="number">
-              <Form.Label>Number of People</Form.Label>
+              <Form.Label className="col-light">Number of People</Form.Label>
               <Form.Control
                 type="number"
                 placeholder="number of people"
@@ -39,26 +39,27 @@ const AddModal = ({ show, handleClose, city,handleAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="date">
-              <Form.Label>Date</Form.Label>
+              <Form.Label className="col-light">Date</Form.Label>
               <Form.Control
                 type="date"
                 placeholder="Date"
                 required
                 onChange={(e) => setDate(e.target.value)}
+                
               />
             </Form.Group>
             <div className="text-center">
-              <Button variant="success" type="submit" className="me-2">
+              <Button variant="success" type="submit" className="me-2 save-color">
                 Save
               </Button>
-              <Button variant="danger" type="button" onClick={handleClose}>
+              <Button variant="danger" type="button" onClick={handleClose} className="cancel-color">
                 Close
               </Button>
             </div>
           </Form>
         </Modal.Body>
       </Modal>
-    </>
+    </div>
   );
 };
 

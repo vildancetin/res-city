@@ -64,7 +64,7 @@
 
 
 .list-item{
-  background-color: #FFCC70;
+  background-color: #ffcd70;
   padding: 30px;
   margin: 10px;
   align-items: center;
@@ -92,4 +92,38 @@
   top: 50%;
   padding: 0.5rem;
   transform: translate(-50%, -50%);
+}
+.save-color{
+  background-color: #C850C0;
+  border: none;
+  color: #4158D0;
+  font-weight: 700;
+}
+.save-color:hover{
+  background-color: #FFCC70;
+}
+.cancel-color{
+  background-color: #ffcc70;
+  border: none;
+  color: #4158D0;
+  font-weight: 700;
+}
+.cancel-color:hover{
+  background-color: #C850C0;
+}
+.col-light{
+  color: #FFCC70;
+  font-size: 20px;
+}
+.col-dark{
+  color: #C850C0;
+}
+.modal-bg{
+  background: linear-gradient(43deg, #4159d09f 0%, #c850c0b2 46%, #FFCC70 100%);
+}
+.head{
+  color: #4158D0;
+}
+body{
+  background: linear-gradient(43deg, #4159d05b 0%, #c850c05e 46%, #ffcd7093 100%);
 }
