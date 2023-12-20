@@ -5,19 +5,24 @@ import { visitedCities } from "../helper/data";
 
 
 const Home = () => {
-  const [visited,setVisited]=useState(visitedCities)
+  const [visited,setVisited]=useState(JSON.parse(localStorage.getItem("list")) || [])
 
   const handleAdd=(newVisiting)=>{
     setVisited([...visited,newVisiting])
+    localStorage.setItem("list",JSON.stringify([...visited,newVisiting]))
   }
   const handleDelete=(id)=>{
       const filteredList=visited.filter((item)=> item.id!==id)
       setVisited(filteredList)
+    localStorage.setItem("list",JSON.stringify(filteredList))
+
   }
 
   const handleDubleClick=(id)=>{
     const updateList=visited.map((item)=>item.id === id ? {...item,visited:!item.visited}: item)
     setVisited(updateList)
+    localStorage.setItem("list",JSON.stringify(updateList))
+
   }
   return (
   <div>
